@@ -22,3 +22,59 @@ menu:
       value: unban
       description: 'Adquira UNBAN em nosso servidor de forma automática'
       emoji: U+1F4B5
+
+  vip:
+    1:
+      name: '[Basic] (30 dias) - R$20,00'
+      value: basic.30.20
+      description: 'Selecione para adquirir o VIP Basic durante 30 dias'
+      emoji: U+1F4B5
+    2:
+      name: '[Advanced] (30 dias) - 35,00'
+      value: advanced.30.35
+      description: 'Selecione para adquirir o VIP Advanced durante 30 dias'
+      emoji: U+1F4B5
+    3:
+      name: '[Spectral] (30 dias)- 50,00'
+      value: spectral.30.50
+      description: 'Selecione para adquirir o VIP Spectral durante 30 dias'
+      emoji: U+1F4B5
+
+  cash:
+    1:
+      name: '1 de cash - R$1,00'
+      value: cash.1.1
+      description: 'Selecione para adquirir 1 de CASH'
+      emoji: U+1F4B5
+    2:
+      name: '5 de cash - R$4,00'
+      value: cash.5.4
+      description: 'Selecione para adquirir 5 de CASH'
+      emoji: U+1F4B5
+    3:
+      name: '10 de cash - R$7,00'
+      value: cash.10.7
+      description: 'Selecione para adquirir 10 de CASH'
+      emoji: U+1F4B5
+    4:
+      name: '20 de cash - R$12,00'
+      value: cash.20.12
+      description: 'Selecione para adquirir 20 de CASH'
+      emoji: U+1F4B5
+    5:
+      name: '50 de cash - R$25,00'
+      value: cash.50.25
+      description: 'Selecione para adquirir 50 de CASH'
+      emoji: U+1F4B5
+    6:
+      name: '100 de cash - R$45,00'
+      value: cash.100.45
+      description: 'Selecione para adquirir 100 de CASH'
+      emoji: U+1F4B5
+
+  unban:
+    1:
+      name: 'Unban - R$25,00'
+      value: unban.25
+      description: 'Selecione para adquirir o seu UNBAN'
+      emoji: U+1F4B5
