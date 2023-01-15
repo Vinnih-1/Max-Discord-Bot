@@ -1,0 +1,8 @@
+maxbot:
+  token: MTA0NjQwOTU2OTczMzIwMTkzMQ.GnYTG_.AHSZ_mWcTYyD8yPPr6E0kWp5bQheJulvwfJjpg # O token do bot que você quer ligar
+  ticket: 896872221618896956 # ID da categoria do ticket
+  guild: 896553346738057226 # ID do servidor do seu discord
+  mercado-pago: # Aqui você colocará os dados do seu mercado pago
+    access-token: APP_USR-3033113519295434-011413-3a189260c949717ce75f0de85bef593a-1187350395
+    external-pos-id: REALCAIXA001
+    user-id: 1187350395

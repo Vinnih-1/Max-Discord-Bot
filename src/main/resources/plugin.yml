@@ -1,0 +1,4 @@
+name: MaxBot
+version: 1.0
+main: kazumy.project.maxbot.spigot.SpigotMain
+author: Kazumy

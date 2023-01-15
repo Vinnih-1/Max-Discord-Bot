@@ -1,0 +1,24 @@
+menu:
+  ticket:
+    1:
+      name: 'Adquirir Serviços'
+      value: comprar
+      description: 'Contrate um dos planos do nosso serviço.'
+      emoji: U+1F4B5
+
+  services:
+    1:
+      name: 'VIP'
+      value: vip
+      description: 'Adquira VIP em nosso servidor de forma automática'
+      emoji: U+1F4B5
+    2:
+      name: 'CASH'
+      value: cash
+      description: 'Adquira CASH em nosso servidor de forma automática'
+      emoji: U+1F4B5
+    3:
+      name: 'UNBAN'
+      value: unban
+      description: 'Adquira UNBAN em nosso servidor de forma automática'
+      emoji: U+1F4B5

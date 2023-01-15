@@ -1,0 +1,35 @@
+embed:
+  ticket:
+    title: ':telephone: Atendimento da RealHosting'
+    footer: 'Atendimento oficial da RealHosting'
+    description: 'Seja bem-vindo(a) ao atendimento da RealHosting. Para iniciar seu
+      atendimento selecione a categoria no meu abaixo.'
+    fields: # Caso você não queira que sua embed contenha fields, apague e deixe apenas, title, footer e description.
+      '1':
+        name: Horário de Atendimento
+        value: 14:30 às 23:00
+        inline: true
+      '2':
+        name: Dias de Atendimento
+        value: Segunda a Sexta (Salvo Feriados)
+        inline: true
+
+  services:
+    title: ':desktop: Aqui você poderá escolher o tipo do serviço'
+    footer: 'Auto-Atendimento oficial da RealHosting'
+    description: 'Clique no tipo de serviço que você deseja adquirir!'
+    fields:
+      '1':
+        name: Horário de Atendimento
+        value: 14:30 às 23:00
+        inline: true
+      '2':
+        name: Dias de Atendimento
+        value: Segunda a Sexta (Salvo Feriados)
+        inline: true
+
+  terms:
+    title: 'Você concorda com os nossos termos?'
+    footer: 'Auto-Atendimento oficial da RealHosting'
+    description: 'Para prosseguir, você precisará concordar com os nossos [termos](https://google.com)'
+    image: 'https://cdn.discordapp.com/attachments/967481970797985822/1041728331114106941/2022-11-14_11-55.png'

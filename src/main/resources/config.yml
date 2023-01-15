@@ -1,0 +1,8 @@
+maxbot:
+  token: none # O token do bot que você quer ligar
+  ticket: none # ID da categoria do ticket
+  guild: none # ID do servidor do seu discord
+  mercado-pago: # Aqui você colocará os dados do seu mercado pago
+    access-token: none
+    external-pos-id: none
+    user-id: none
