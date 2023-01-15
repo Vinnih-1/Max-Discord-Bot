@@ -1,6 +1,7 @@
 package kazumy.project.maxbot.discord.listener;
 
 import kazumy.project.maxbot.discord.DiscordMain;
+import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.SelectMenuInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -30,5 +31,14 @@ public class EventListener extends ListenerAdapter {
                 .filter(interaction -> event.getComponentId().contains(interaction.getId()))
                 .findAny()
                 .ifPresent(interaction -> ((InteractionService<ButtonInteractionEvent>)interaction).execute(event));
+    }
+
+    @Override
+    public void onModalInteraction(ModalInteractionEvent event) {
+        instance.getInteractionManager().getInteractionList()
+                .stream()
+                .filter(interaction -> event.getModalId().contains(interaction.getId()))
+                .findAny()
+                .ifPresent(interaction -> ((InteractionService<ModalInteractionEvent>)interaction).execute(event));
     }
 }
