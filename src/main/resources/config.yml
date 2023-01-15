@@ -6,3 +6,8 @@ maxbot:
     access-token: none
     external-pos-id: none
     user-id: none
+
+  commands: # Após a detecção do pagamento, o comando abaixo é rodado
+    vip: 'darvip %s %s 30'
+    cash: 'cash adicionar %s %s'
+    unban: 'desbanir %s'
