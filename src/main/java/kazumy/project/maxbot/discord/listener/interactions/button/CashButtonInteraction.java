@@ -7,16 +7,16 @@ import net.dv8tion.jda.api.interactions.components.Modal;
 import net.dv8tion.jda.api.interactions.components.text.TextInput;
 import net.dv8tion.jda.api.interactions.components.text.TextInputStyle;
 
-public class NicknameButtonInteraction extends InteractionService<ButtonInteractionEvent> {
+public class CashButtonInteraction extends InteractionService<ButtonInteractionEvent> {
 
-    public NicknameButtonInteraction() {
-        super("nickname");
+    public CashButtonInteraction() {
+        super("button-cash");
     }
 
     @Override
     public void execute(ButtonInteractionEvent event) {
-        val modal = Modal.create("modalname", "Insira o seu Nickname");
-        modal.addActionRow(TextInput.create("name", "Name", TextInputStyle.SHORT)
+        val modal = Modal.create("nickname", "Insira o seu Nickname");
+        modal.addActionRow(TextInput.create("cash", "Name", TextInputStyle.SHORT)
                 .setPlaceholder("Nickname")
                 .build());
         event.replyModal(modal.build()).queue();
