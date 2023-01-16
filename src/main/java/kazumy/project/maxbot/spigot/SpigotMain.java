@@ -21,10 +21,5 @@ public class SpigotMain extends JavaPlugin {
 
         ConfigurationRegistry.of(this).registry();
         discordMain = DiscordMain.of(this).startup();
-        discordMain.getJda().getGuildById(DiscordValue.get(DiscordValue::guild))
-                .getTextChannelById("1043521638223851520")
-                .sendMessageEmbeds(TicketEmbedValue.instance().toEmbed())
-                .addActionRow(TicketMenuValue.instance().toMenu("ticket"))
-                .queue();
     }
 }
