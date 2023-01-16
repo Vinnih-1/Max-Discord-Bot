@@ -26,17 +26,17 @@ menu:
   vip:
     1:
       name: '[Basic] (30 dias) - R$20,00'
-      value: basic.30.20
+      value: basic.30.20.vip
       description: 'Selecione para adquirir o VIP Basic durante 30 dias'
       emoji: U+1F4B5
     2:
       name: '[Advanced] (30 dias) - 35,00'
-      value: advanced.30.35
+      value: advanced.30.35.vip
       description: 'Selecione para adquirir o VIP Advanced durante 30 dias'
       emoji: U+1F4B5
     3:
       name: '[Spectral] (30 dias)- 50,00'
-      value: spectral.30.50
+      value: spectral.30.50.vip
       description: 'Selecione para adquirir o VIP Spectral durante 30 dias'
       emoji: U+1F4B5
 
