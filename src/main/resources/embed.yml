@@ -16,7 +16,7 @@ embed:
 
   terms:
     title: 'Você concorda com os nossos termos?'
-    description: 'Para prosseguir, você precisará concordar com os nossos [termos](https://google.com)'
+    description: 'Para prosseguir, você precisará concordar com os nossos [termos](https://cdn.discordapp.com/attachments/1063838137182330880/1063880929539522580/Termos_SpectralUP.pdf)'
     image: 'https://cdn.discordapp.com/attachments/967481970797985822/1041728331114106941/2022-11-14_11-55.png'
 
   close-ticket:
@@ -79,6 +79,20 @@ embed:
     title: ':desktop: Aqui você poderá selecionar o seu UNBAN'
     footer: 'Auto-Atendimento oficial da RealHosting'
     description: 'Clique no UNBAN para adquirir!'
+    fields:
+      '1':
+        name: Horário de Atendimento
+        value: 14:30 às 23:00
+        inline: true
+      '2':
+        name: Dias de Atendimento
+        value: Segunda a Sexta (Salvo Feriados)
+        inline: true
+
+  nickname:
+    title: ':white_check_mark: Estamos quase finalizando...'
+    footer: 'Auto-Atendimento oficial da RealHosting'
+    description: 'Aqui você deverá clicar no botão abaixo para nos informar seu nickname.'
     fields:
       '1':
         name: Horário de Atendimento
