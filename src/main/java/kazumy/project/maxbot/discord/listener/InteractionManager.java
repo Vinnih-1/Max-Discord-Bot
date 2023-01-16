@@ -1,15 +1,11 @@
 package kazumy.project.maxbot.discord.listener;
 
-import kazumy.project.maxbot.discord.listener.interactions.button.NicknameButtonInteraction;
-import kazumy.project.maxbot.discord.listener.interactions.button.TermsAgreeButtonInteraction;
-import kazumy.project.maxbot.discord.listener.interactions.button.TermsDisagreeButtonInteraction;
+import kazumy.project.maxbot.discord.listener.interactions.button.*;
 import kazumy.project.maxbot.discord.listener.interactions.menu.*;
 import kazumy.project.maxbot.discord.listener.interactions.modal.NicknameModalInteraction;
 import lombok.Getter;
-import org.reflections.Reflections;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 public class InteractionManager {
@@ -24,7 +20,12 @@ public class InteractionManager {
         interactionList.add(new VipMenuInteraction());
         interactionList.add(new CashMenuInteraction());
         interactionList.add(new UnbanMenuInteraction());
-        interactionList.add(new NicknameButtonInteraction());
+        interactionList.add(new VipBasicButtonInteraction());
+        interactionList.add(new VipAdvancedButtonInteraction());
+        interactionList.add(new VipSpectralButtonInteraction());
+        interactionList.add(new UnbanButtonInteraction());
+        interactionList.add(new CashButtonInteraction());
+        interactionList.add(new CloseTicketButtonInteraction());
         interactionList.add(new NicknameModalInteraction());
     }
 }
