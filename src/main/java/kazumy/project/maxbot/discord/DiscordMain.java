@@ -7,6 +7,7 @@ import kazumy.project.maxbot.spigot.SpigotMain;
 import lombok.Data;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.bukkit.Bukkit;
 
 @Data(staticConstructor = "of")
@@ -21,6 +22,7 @@ public class DiscordMain {
         try {
             jda = JDABuilder.createDefault(DiscordValue.get(DiscordValue::token))
                     .addEventListeners(new EventListener(this))
+                    .enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.MESSAGE_CONTENT)
                     .build().awaitReady();
 
             interactionManager.initInteraction();
