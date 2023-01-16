@@ -6,11 +6,8 @@ import kazumy.project.maxbot.payment.Payment;
 import kazumy.project.maxbot.payment.PaymentData;
 import lombok.val;
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.interactions.components.Modal;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
 import net.dv8tion.jda.api.interactions.components.selections.SelectMenuInteraction;
-import net.dv8tion.jda.api.interactions.components.text.TextInput;
-import net.dv8tion.jda.api.interactions.components.text.TextInputStyle;
 import net.dv8tion.jda.api.utils.FileUpload;
 import org.apache.commons.lang.RandomStringUtils;
 
@@ -20,7 +17,7 @@ import java.math.BigDecimal;
 public class VipMenuInteraction extends InteractionService<SelectMenuInteraction> {
 
     public VipMenuInteraction() {
-        super("vip");
+        super("menu-vip");
     }
 
     @Override
@@ -35,10 +32,9 @@ public class VipMenuInteraction extends InteractionService<SelectMenuInteraction
                 .build();
         payment.request(data).wait(success -> {
             event.getChannel().sendMessageEmbeds(NicknameEmbedValue.instance().toEmbed())
-                    .addActionRow(Button.success("nickname", "Nickname"))
+                    .addActionRow(Button.success("button-vip-" + value[0], "Nickname"))
                     .queue();
         });
-
         event.deferReply(false).setContent("Cobrança Automática de Serviços Prestados")
                 .addEmbeds(new EmbedBuilder()
                         .setColor(Color.GRAY)

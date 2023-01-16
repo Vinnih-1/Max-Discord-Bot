@@ -25,7 +25,7 @@ public class UnbanMenuValue implements ConfigurationInjectable {
 
     @SneakyThrows
     public SelectMenu toMenu() {
-        val menu = SelectMenu.create("unban");
+        val menu = SelectMenu.create("menu-unban");
         if (section == null) return menu.build();
 
         val name = new StringBuilder();

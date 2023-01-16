@@ -25,7 +25,7 @@ public class VipMenuValue implements ConfigurationInjectable {
 
     @SneakyThrows
     public SelectMenu toMenu() {
-        val menu = SelectMenu.create("vip");
+        val menu = SelectMenu.create("menu-vip");
         if (section == null) return menu.build();
 
         val name = new StringBuilder();

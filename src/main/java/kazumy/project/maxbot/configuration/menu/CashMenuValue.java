@@ -25,7 +25,7 @@ public class CashMenuValue implements ConfigurationInjectable {
 
     @SneakyThrows
     public SelectMenu toMenu() {
-        val menu = SelectMenu.create("cash");
+        val menu = SelectMenu.create("menu-cash");
         if (section == null) return menu.build();
 
         val name = new StringBuilder();
